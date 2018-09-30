@@ -35,7 +35,7 @@ table {
   border-collapse: collapse;
 }
 
-[class^="icon-"] {
+[class^="icon-"]:before {
   display: inline-block;
   font-family: iconfont;
   text-rendering: auto;
