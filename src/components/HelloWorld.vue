@@ -87,9 +87,16 @@
 export default {
   name: 'HelloWorld',
   data () {
+
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created(){
+    console.log(this.$el)
+  },
+  mounted(){
+    console.log(this.$el)
   }
 }
 </script>

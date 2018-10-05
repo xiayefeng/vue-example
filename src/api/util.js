@@ -291,9 +291,9 @@ export const isDev = () => process.env.NODE_ENV === 'development'
 export const isProd = () => process.env.NODE_ENV === 'production'
 
 export function formatNum (num, n = 2) {
-  if (typeof num == "number") {
+  if (typeof num === "number") {
       num = String(num.toFixed(n))
-      var re = /(-?\d+)(\d{3})/;
+      const re = /(-?\d+)(\d{3})/;
       while (re.test(num)) num = num.replace(re, "$1,$2")
       return num
   }
