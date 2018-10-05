@@ -17,6 +17,7 @@
     "babel-polyfill": "^6.26.0",
     "element-ui": "^2.4.6",
     "lodash": "^4.17.10",
+    "number-precision": "^1.2.0",
     "query-string": "^6.1.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
