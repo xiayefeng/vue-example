@@ -107,16 +107,16 @@
 %down-arrow {
   display: inline-block;
   position: relative;
-  width: 40rpx;
-  height: 30rpx;
-  margin-right: 20rpx;
+  width: 40px;
+  height: 30px;
+  margin-right: 20px;
 
   &::after {
     display: inline-block;
     content: " ";
-    height: 18rpx;
-    width: 18rpx;
-    border-width: 0 2rpx 2rpx 0;
+    height: 18px;
+    width: 18px;
+    border-width: 0 2px 2px 0;
     border-color: #999999;
     border-style: solid;
     transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
@@ -124,7 +124,52 @@
     transition: transform .3s;
     position: absolute;
     top: 50%;
-    right: 10rpx;
+    right: 10px;
     margin-top: -10rpx;
   }
 }
+
+// 下箭头
+%down-arrow {
+  display :inline-block;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  margin-right: 20px;
+
+  &::after {
+    display: inline-block;
+    content: " ";
+    height: 18px;
+    width: 18px;
+    border-width: 0 2px 2px 0;
+    border-color: #999999;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform-origin: center;
+    transition: transform .3s;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -10rpx;
+  }
+
+  // 加上active旋转成 上箭头
+  &.active::after {
+    transform-origin: center;
+    transform: rotate(-135deg);
+    transition: transform .3s;
+  }
+}
+
+%triangle {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #ccc;
+}
+
+

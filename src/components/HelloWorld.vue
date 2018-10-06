@@ -93,7 +93,6 @@ export default {
     }
   },
   created(){
-    console.log(this.$el)
   },
   mounted(){
     console.log(this.$el)
